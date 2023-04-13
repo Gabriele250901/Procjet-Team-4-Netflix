@@ -16,7 +16,7 @@
     
 }
 .container-faq h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900;
     color: white;
     font-family: sans-serif;
@@ -42,13 +42,16 @@
     width: 20px;
     height: fit-content;
     padding-top: 12px;
-    
-
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(80deg) brightness(101%) contrast(104%);
 }
 .button-faq button {
     width: 65vw;
-    height: 5vh;
-    background-color: gray;
+    height: 30%;
+    background-color: rgba(45, 45, 45, 1);
+    border: none;
+}
+.button-faq button:hover {
+    background-color: rgba(128, 128, 128,0.6);
 }
 .button-faq button {
     display: flex;
@@ -66,20 +69,66 @@
     align-items: center;
 }
 .submit-part #email1 {
-    width:447px ;
+    width: 447px ;
     height: 56px;
     background-color:black ;
-    padding: 24px 16px 8px;
+    padding: 10px 16px 8px;
+    border-color: white;
+   
+   
 }
 .submit-part #button1 {
-width: 131px;
-height: 56px;
+width: 25%;
+height: 100%;
 background: rgb(229, 9, 20);
 margin: 0px 0px 0px 8px;
 padding: 12px 24px;
+border: none;
+
 }
 .submit-part #span1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
+    
+}
+
+@media  screen and (max-width: 450px) {
+    .submit-part {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .submit-part #button1 {
+        width: 40vw;
+        
+    }
+    .button-faq span {
+        font-size: 13px;
+    }
+    .button-faq button {
+        width: 90vw;
+    }
+    .title-1 h3 {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+     .submit-part #email1 {
+        width: 80vw;
+        height: 50%;
+    }
+    .container-faq {
+        height: fit-content;
+    }
+  
+}
+
+@media  screen and (max-width:830px) {
+
+    .title-1 h3 {
+      padding-left: 50px;
+      font-size: 20px;
+      word-spacing: 5px;
+    }
+    
 }
