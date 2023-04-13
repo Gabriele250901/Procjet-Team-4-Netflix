@@ -1,128 +1,126 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.container .spazio {
+  width: 100%;
+  height: 0.5rem;
+  background-color: rgb(35, 35, 35);
 }
-
-.mainscreen {
+.container .first {
   width: 100%;
   height: 100vh;
-  color: white;
-  background: black;
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.9) 0,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 0.9) 100%
-    ),
-    url("netflixbackground.jpeg");
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: sans-serif;
-}
-
-.main {
   display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+.container .first .text1 {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  top: 50%;
-  left: 50%;
-  margin-top: 100px;
-  text-align: center;
+  padding: 5%;
 }
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.logo {
-  width: 150px;
-  cursor: pointer;
-  padding: 8px;
-  margin-left: 120px;
-}
-
-.signin {
-  border: 0;
-  outline: 0;
-  background: #db0001;
-  color: #fff;
-  padding: 7px 20px;
-  font-size: 15px;
-  border-radius: 4px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-#language-picker-select {
-  background: transparent;
-  color: inherit;
-  padding: 7px 20px;
-  font-size: 15px;
-  border-radius: 4px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.unlimited {
-  font-size: 2.5rem;
-  line-height: 70px;
-  font-weight: 700;
-  max-width: 900px;
-  margin: 0;
-}
-
-.email {
-  background: transparent;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  margin-top: 8px;
-}
-
-.email input {
-  flex: 1;
-  height: 45px;
-  width: 400px;
-  border-width: 2px;
-  border-style: inset;
-  border: 1px solid rgb(211, 211, 211);
-  border-radius: 5px;
-  border-image: initial;
-  outline: 0;
-  margin-left: 20px;
-  background: black;
-  opacity: 0.7;
+.container .first .text1 .first-h2-p {
   color: white;
-  margin-right: 8px;
+  height: auto;
+  width: auto;
+}
+.container .first .media1 {
   display: flex;
-  text-align: center;
 }
-
-.email button {
-  background-color: #db0001;
-  border-radius: 5px;
-  border: 0;
-  outline: 0;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 15px 30px;
-  font-weight: 120;
+.container .first .media1 .masck1 {
+  z-index: 0;
 }
-
-.world {
-  height: 20px;
+.container .first .media1 .video1 {
+  position: absolute;
+  top: 16%;
+  left: 44%;
+  z-index: 1;
+  overflow: hidden;
 }
-
-.titles {
+.container .second {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+.container .second .text2 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
 }
+.container .second .text2 .second-h2-p {
+  color: white;
+  height: auto;
+  width: auto;
+}
+.container .second .media2 {
+  display: flex;
+}
+.container .second .media2 .mask2 {
+  z-index: 0;
+}
+.container .second .media2 .video2 {
+  position: absolute;
+  top: 111%;
+  left: 12.5%;
+}
+.container .third {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+.container .third .text3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.container .third .text3 .third-h2-p {
+  color: white;
+  height: auto;
+  width: auto;
+}
+.container .fourth {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+.container .fourth .text4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.container .fourth .text4 .fourth-h2-p {
+  color: white;
+  height: auto;
+  width: auto;
+}
+.container .fourth .download {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  width: 40%;
+  height: 18%;
+  top: 360%;
+  left: 11.5%;
+  background-color: black;
+}
+.container .fourth .download .text {
+  color: white;
+}
+.container .fourth .download img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
