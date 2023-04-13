@@ -1,0 +1,123 @@
+* {
+}
+
+body {
+  color: white;
+  background: black;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 0,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url("netflixbackground.jpeg");
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: 120px;
+}
+
+.signin {
+  border: 0;
+  outline: 0;
+  background: #db0001;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#language-picker-select {
+  background: transparent;
+  color: inherit;
+  padding: 7px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 70px;
+  font-weight: 700;
+  max-width: 900px;
+  margin: 0;
+}
+
+.email {
+  background: transparent;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.email input {
+  flex: 1;
+  height: 45px;
+  width: 400px;
+  border-width: 2px;
+  border-style: inset;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 5px;
+  border-image: initial;
+  outline: 0;
+  margin-left: 20px;
+  background: black;
+  opacity: 0.7;
+  color: white;
+  margin-right: 8px;
+  display: flex;
+  text-align: center;
+}
+
+.email button {
+  background-color: #db0001;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-weight: 120;
+}
+
+.world {
+  height: 20px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
