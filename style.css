@@ -33,13 +33,13 @@
   .container .first .media1 {
     display: flex;
   }
-  .container .first .media1 .masck1 {
-    z-index: 0;
+  .container .first .media1 .mask1 {
+    z-index: 15;
   }
   .container .first .media1 .video1 {
     position: absolute;
-    top: 120%;
-    left: 44%;
+    top: 117%;
+    left: 56%;
     z-index: 1;
     overflow: hidden;
   }
@@ -66,12 +66,14 @@
     display: flex;
   }
   .container .second .media2 .mask2 {
-    z-index: 0;
+    z-index: 15;
   }
   .container .second .media2 .video2 {
     position: absolute;
     top: 210%;
-    left: 12.5%;
+    left: 9.5%;
+    width: 400px;
+    overflow: hidden;
   }
   .container .third {
     width: 100%;
