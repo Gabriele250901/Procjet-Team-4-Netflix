@@ -185,6 +185,7 @@
     display: flex;
     flex-direction: row;
     background-color: black;
+    position: relative;
   }
   .container .fourth .text4 {
     display: flex;
@@ -206,7 +207,7 @@
     position: absolute;
     width: 40%;
     height: 18%;
-    top: 465%;
+    top: 20%;
     left: 11.5%;
     background-color: black;
   }
