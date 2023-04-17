@@ -1,8 +1,317 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
+/*parte di matteo*/
+.container
+  .one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    max-height: 86.5vh;
+    width: 100%;
+    padding: 4.5rem 0rem;
+  }
+  .spazio {
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(35, 35, 35);
+  }
+  .container .first {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 0rem 2rem;
+  }
+  .container .first .text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: 0.5rem;
+  }
+  .container .first .text1 .first-h2-p {
+    color: white;
+    height: auto;
+    width: auto;
+    font-family: sans-serif;
+  }
+  .container .first .media1 {
+    display: flex;
+    width: 50%;
+    position: relative;
+  }
+  .container .first .media1 .mask1 {
+    z-index: 15;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .container .first .media1 .video1 {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 76%;
+    height: 56%;
+    overflow: hidden;
+  }
+  .two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    max-height: 86.5vh;
+    width: 100%;
+    padding: 4.5rem 0rem;
+  }
+  .container .second {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 0rem 2rem;
+  }
+  .container .second .text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 0.5rem;
+  }
+  .container .second .text2 .second-h2-p {
+    color: white;
+    height: auto;
+    width: auto;
+    font-family: sans-serif;
+  }
+  .h2-text {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  .p-text {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .container .second .media2 {
+    display: flex;
+    width: 50%;
+    position: relative;
+  }
+  /* @media screen and (min-width: 1280px){
+    .container .second {
+      max-width: calc(83% - 6rem);
+  }}  */
+
+  .container .second .media2 .mask2 {
+    z-index: 15;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .apple{
+    width: 100%;
+  }
+  .container .second .media2 .video2 {
+    position: absolute;
+    top: 11%;
+    left: 17%;
+    width: 65%;
+    height: 55%;
+    overflow: hidden;
+  }
+  .container .third {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+  }
+  .container .third .text3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+  .container .third .text3 .third-h2-p {
+    color: white;
+    height: auto;
+    width: auto;
+  }
+  .container .fourth {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+  }
+  .container .fourth .text4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+  .container .fourth .text4 .fourth-h2-p {
+    color: white;
+    height: auto;
+    width: auto;
+  }
+  .container .fourth .download {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    width: 40%;
+    height: 18%;
+    top: 465%;
+    left: 11.5%;
+    background-color: black;
+  }
+  .container .fourth .download .text {
+    color: white;
+  }
+  .container .fourth .download img {
+    width: 100%;
+    height: 100%;
+  }
+
+/*parte di lorenzo giu` */
+
+.mainscreen {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background: black;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 0,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url("netflixbackground.jpeg");
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: 120px;
+}
+
+.signin {
+  border: 0;
+  outline: 0;
+  background: #db0001;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#language-picker-select {
+  background: transparent;
+  color: inherit;
+  padding: 7px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.unlimited {
+  font-size: 2.5rem;
+  line-height: 70px;
+  font-weight: 700;
+  max-width: 900px;
+  margin: 0;
+}
+
+.email {
+  background: transparent;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.email input {
+  flex: 1;
+  height: 45px;
+  width: 400px;
+  border-width: 2px;
+  border-style: inset;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 5px;
+  border-image: initial;
+  outline: 0;
+  margin-left: 20px;
+  background: black;
+  opacity: 0.7;
+  color: white;
+  margin-right: 8px;
+  display: flex;
+  text-align: center;
+}
+
+.email button {
+  background-color: #db0001;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-weight: 120;
+}
+
+.world {
+  height: 20px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+/*parte gabry */
 .container-faq {
     width: 100%;
     height: 100vh;
@@ -132,3 +441,5 @@ border: none;
     }
     
 }
+
+
