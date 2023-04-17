@@ -448,4 +448,119 @@ border: none;
     
 }
 
+/* Parte di Stefano */
+
+.footer-container {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+}
+
+.links ul {
+  list-style: none;
+  font-size: 14px;
+}
+
+
+
+
+footer {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 5%;
+}
+
+.telephone {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .links>* {
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin-bottom: 2rem;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline white;
+  
+}
+
+
+.links a:active {
+  color: red;
+}
+
+footer .links ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.select-box {
+  position: relative;
+}
+
+.select-box svg {
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: white;
+}
+
+select {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  background: rgb(36, 36, 36);
+  border: 1px solid #989898;
+  padding: 6px 0px 6px 20px;
+  border-radius: 3px;
+  width: 126px;
+  height: 32px;
+  font-size: 15px;
+}
+
+
+
+@media (max-width: 950px) {
+
+
+
+  footer {
+      width: 90%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  footer .links ul {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  footer .links ul {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1rem;
+  }
+}
+
+
+@media (max-width: 320px) {
+  footer .links ul {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1rem;
+  }
+}
+
 
