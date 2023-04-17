@@ -179,44 +179,104 @@
     width: 100%;
   }
   /* quarta sezione */
+  .four{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    max-height: 86.5vh;
+    width: 100%;
+    padding: 4.5rem 0rem;
+    position: relative;
+  }
   .container .fourth {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
     background-color: black;
-    position: relative;
+    margin: 0rem 2rem;
+  }
+  @media screen and (min-width: 1280px){
+    .container .fourth {
+      max-width: calc(83% - 7rem);
+  }}
+  .container .four .fourth .media4 {
+    display: flex;
+    width: 50%;
+  }
+  .telefono {
+    width: 100%;
   }
   .container .fourth .text4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    width: 50%;
+    margin-left: 0.5rem;
   }
   .container .fourth .text4 .fourth-h2-p {
     color: white;
     height: auto;
     width: auto;
+    font-family: sans-serif;
   }
-  .container .fourth .download {
-    border: 1px solid red;
+  .container .four .download {
+    border: 3px solid rgb(35, 35, 35);
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    width: 40%;
-    height: 18%;
-    top: 20%;
-    left: 11.5%;
+    width: 21.5%;
+    height: 19.8%;
+    top: 61%;
+    left: 20.5%;
     background-color: black;
+    padding: 8px 12px;
+    align-items: center;
   }
-  .container .fourth .download .text {
+  .container .four .download .text {
     color: white;
+    margin: 0.3rem 0rem;
   }
-  .container .fourth .download img {
+  .container .four .download .imgSt{
+    margin-right: 1rem;
+  }
+  .container .four .download img {
     width: 100%;
     height: 100%;
+  }
+  .container .four .download .text .h2St{
+    text-align: left;
+    font-family: sans-serif;
+  }
+  .container .four .download .text .pSt{
+    color: #0071eb;
+    font-weight: 400;
+    text-align: left;
+    font-family: sans-serif;
+  }
+  .container .four .download .imgD {
+    width: 3rem;
+    height: 3rem;
+  }
+   
+  @media only screen and (min-width: 600px){
+    .container .four .download .text .h2St {
+      font-size: 1rem;
+    }
+  }
+  @media only screen and (min-width: 600px){
+    .container .four .download .text .pSt {
+      font-size: 0.875rem;
+    }
+  }
+  @media only screen and (min-width: 960px){
+    .container .four .download .imgSt {
+      height: 4.5rem;
+    }
   }
 
 /*parte di lorenzo giu` */
