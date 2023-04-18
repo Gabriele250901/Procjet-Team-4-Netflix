@@ -31,10 +31,53 @@
     background-color: black;
     margin: 0rem 2rem;
   }
+  @media screen and (max-width: 960px){
+    .container .one{
+      max-height: 100%;
+      padding: 4.5rem 0;
+    }
+    .container .one .first{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      max-width: calc(100% - 4rem)
+    }
+    .container .one .first .text1 {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    .container .one .first .text1 .h2-text{
+      font-size: 2rem;
+    }
+    .container .one .first .text1 .p-text{
+      font-size: 1.1rem;
+    }
+    .container .one .first .media1{
+      height: 100%;
+      width: 40rem;
+    }
+    .container .one .first .media1 .video1{
+      left: 9.5%;
+    }
+  }
   @media screen and (min-width: 1280px){
     .container .first {
       max-width: calc(83% - 7rem);
-  }}
+    }
+  }
+  @media screen and (min-width: 1920px){
+    .container .first {
+      max-width:calc(83% - 17rem) ;
+    }
+  }
+  @media screen and (min-width: 2560px){
+    .container .first {
+      max-width: calc(83% - 50rem);
+    }
+  }
   .container .first .text1 {
     display: flex;
     flex-direction: column;
@@ -48,6 +91,7 @@
     height: auto;
     width: auto;
     font-family: sans-serif;
+    margin-right: 0.37rem;
   }
   .container .first .media1 {
     display: flex;
@@ -64,8 +108,8 @@
     position: absolute;
     top: 20%;
     left: 13%;
-    width: 76%;
-    height: 56%;
+    width: 83%;
+    height: 78%;
     overflow: hidden;
   }
   /* seconda sezione */
@@ -105,7 +149,7 @@
     font-family: sans-serif;
   }
   .h2-text {
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 800;
   }
   .p-text {
@@ -179,45 +223,114 @@
     width: 100%;
   }
   /* quarta sezione */
+  .four{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    max-height: 86.5vh;
+    width: 100%;
+    padding: 4.5rem 0rem;
+  }
   .container .fourth {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
     background-color: black;
-    position: relative;
+    margin: 0rem 2rem;
+  }
+  @media screen and (min-width: 1280px){
+    .container .fourth {
+      max-width: calc(83% - 7rem);
+  }}
+  .container .four .fourth .media4 {
+    display: flex;
+    width: 50%;
+  }
+  .telefono {
+    width: 100%;
   }
   .container .fourth .text4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    width: 50%;
+    margin-left: 0.5rem;
   }
   .container .fourth .text4 .fourth-h2-p {
     color: white;
     height: auto;
     width: auto;
+    font-family: sans-serif;
   }
-  .container .fourth .download {
-    border: 1px solid red;
+  .container .four .fourth .media4 .mask4{
+    position: relative;
+  }
+  .container .four .fourth .media4 .mask4 .download {
+    border: 3px solid rgb(35, 35, 35);
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    width: 40%;
-    height: 18%;
-    top: 20%;
-    left: 11.5%;
+    width: 57.8%;
+    height: 27.26%;
+    top: 65%;
+    left: 20.5%;
     background-color: black;
+    padding: 8px 12px;
+    align-items: center;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 1);
   }
-  .container .fourth .download .text {
+  .container .four .download .text {
     color: white;
+    margin: 0.3rem 0rem;
   }
-  .container .fourth .download img {
+  .container .four .download .imgSt{
+    margin-right: 1rem;
+  }
+  .container .four .download img {
     width: 100%;
     height: 100%;
   }
+  .container .four .download .text .h2St{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 1rem;
+  }
+  .container .four .download .text .pSt{
+    color: #0071eb;
+    font-weight: 400;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 0.875rem ;
+  }
+  .container .four .download .imgD {
+    width: 3rem;
+    height: 3rem;
+  }
+  @media only screen and (min-width: 960px){
+    .download {
+      padding: 0.5rem 0.75rem;
+    }
+    .container .four .download .imgSt {
+      height: 4.5rem;
+    }
+  }
+  @media only screen and (min-width: 600px){
+    .container .four .download .text .h2St {
+      font-size: 1rem;
+    }
+    .container .four .download .text .pSt {
+      font-size: 0.875rem;
+    }
+    .download{
+      width: 0.35rem 0.75rem;
+    }
+  }
+
 
 /*parte di lorenzo giu` */
 
