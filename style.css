@@ -33,17 +33,20 @@
   }
   /* comportamento primo video con schermi grandi */
   @media screen and (min-width: 1280px){
-    .container .first {
+    .container .first,
+    .container .second {
       max-width: calc(83% - 7rem);
     }
   }
   @media screen and (min-width: 1920px){
-    .container .first {
+    .container .first,
+    .container .second {
       max-width:calc(83% - 17rem) ;
     }
   }
   @media screen and (min-width: 2560px){
-    .container .first {
+    .container .first,
+    .container .second{
       max-width: calc(83% - 50rem);
     }
   }
@@ -99,10 +102,6 @@
     background-color: black;
     margin: 0rem 2rem;
   }
-  @media screen and (min-width: 1280px){
-    .container .second {
-      max-width: calc(83% - 7rem);
-  }}
   .container .second .text2 {
     display: flex;
     flex-direction: column;
@@ -252,6 +251,7 @@
     padding: 8px 12px;
     align-items: center;
     box-shadow: 0 0 2em 0 rgba(0, 0, 0, 1);
+    max-height: fit-content;
   }
   .container .four .download .text {
     color: white;
@@ -259,6 +259,7 @@
   }
   .container .four .download .imgSt{
     margin-right: 1rem;
+    height: 4.5rem;
   }
   .container .four .download img {
     width: 100%;
@@ -281,11 +282,14 @@
     height: 3rem;
   }
   /* comportamento del banner */
-  @media only screen and (min-width: 960px){
-    .download {
+  @media only screen and (max-width: 960px){
+    .container .four .fourth .media4 .mask4 .download {
       padding: 0.5rem 0.75rem;
+      height: fit-content;
+      top: 74%;
+      justify-content: space-between;
     }
-    .container .four .download .imgSt {
+    .container .four .fourth .media4 .mask4 .download .imgSt {
       height: 4.5rem;
     }
   }
@@ -357,6 +361,7 @@
      .container .four .fourth .media4 {
       height: 100%;
       width: 40rem;
+      max-width: fit-content;
     }
     .container .one .first .media1 .video1{
       left: 9.5%;
