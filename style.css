@@ -1,8 +1,373 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+
+/*parte di matteo*/
+.container
+  /* prima sezione */
+  .one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    max-height: 86.5vh;
+    width: 100%;
+    padding: 4.5rem 0rem;
+  }
+  .spazio {
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(35, 35, 35);
+  }
+  .container .first {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 0rem 2rem;
+  }
+  /* comportamento primo video con schermi grandi */
+  @media screen and (min-width: 1280px){
+    .container .first,
+    .container .second {
+      max-width: calc(83% - 7rem);
+    }
+  }
+  @media screen and (min-width: 1920px){
+    .container .first,
+    .container .second {
+      max-width:calc(83% - 17rem) ;
+    }
+  }
+  @media screen and (min-width: 2560px){
+    .container .first,
+    .container .second{
+      max-width: calc(83% - 50rem);
+    }
+  }
+  .container .first .text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: 0.5rem;
+  }
+  .container .first .text1 .first-h2-p {
+    color: white;
+    height: auto;
+    width: auto;
+    font-family: sans-serif;
+    margin-right: 0.37rem;
+  }
+  .container .first .media1 {
+    display: flex;
+    width: 50%;
+    position: relative;
+  }
+  .container .first .media1 .mask1 {
+    z-index: 15;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .container .first .media1 .video1 {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 83%;
+    height: 78%;
+    overflow: hidden;
+  }
+  /* seconda sezione */
+  .two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    max-height: 86.5vh;
+    width: 100%;
+    padding: 4.5rem 0rem;
+  }
+  .container .second {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 0rem 2rem;
+  }
+  .container .second .text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 0.5rem;
+  }
+  .container .second .text2 .second-h2-p {
+    color: white;
+    height: auto;
+    width: auto;
+    font-family: sans-serif;
+  }
+  .h2-text {
+    font-size: 2.7rem;
+    font-weight: 800;
+  }
+  .p-text {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .container .second .media2 {
+    display: flex;
+    width: 50%;
+    position: relative;
+  }
+  .container .second .media2 .mask2 {
+    z-index: 15;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .apple{
+    width: 100%;
+  }
+  .container .second .media2 .video2 {
+    position: absolute;
+    top: 11%;
+    left: 17%;
+    width: 65%;
+    height: 55%;
+    overflow: hidden;
+  }
+  /* terza sezione */
+  .three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    max-height: 86.5vh;
+    width: 100%;
+    padding: 4.5rem 0rem;
+  }
+  .container .third {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 0rem 2rem;
+  }
+  @media screen and (min-width: 1280px){
+    .container .third {
+      max-width: calc(83% - 7rem);
+  }}
+  .container .third .text3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: 0.5rem;
+  }
+  .container .third .text3 .third-h2-p {
+    color: white;
+    height: auto;
+    width: auto;
+    font-family: sans-serif;
+  }
+  .container .third .media3 {
+    display: flex;
+    width: 50%;
+    position: relative;
+  }
+  .mask3 .child {
+    width: 100%;
+  }
+  /* quarta sezione */
+  .four{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    max-height: 86.5vh;
+    width: 100%;
+    padding: 4.5rem 0rem;
+  }
+  .container .fourth {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 0rem 2rem;
+  }
+  @media screen and (min-width: 1280px){
+    .container .fourth {
+      max-width: calc(83% - 7rem);
+  }}
+  .container .four .fourth .media4 {
+    display: flex;
+    width: 50%;
+  }
+  .telefono {
+    width: 100%;
+  }
+  .container .fourth .text4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 0.5rem;
+  }
+  .container .fourth .text4 .fourth-h2-p {
+    color: white;
+    height: auto;
+    width: auto;
+    font-family: sans-serif;
+  }
+  .container .four .fourth .media4 .mask4{
+    position: relative;
+  }
+  .container .four .fourth .media4 .mask4 .download {
+    border: 3px solid rgb(35, 35, 35);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    width: 57.8%;
+    height: 27.26%;
+    top: 65%;
+    left: 20.5%;
+    background-color: black;
+    padding: 8px 12px;
+    align-items: center;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 1);
+    max-height: fit-content;
+  }
+  .container .four .download .text {
+    color: white;
+    margin: 0.3rem 0rem;
+  }
+  .container .four .download .imgSt{
+    margin-right: 1rem;
+    height: 4.5rem;
+  }
+  .container .four .download img {
+    width: 100%;
+    height: 100%;
+  }
+  .container .four .download .text .h2St{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 1rem;
+  }
+  .container .four .download .text .pSt{
+    color: #0071eb;
+    font-weight: 400;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 0.875rem ;
+  }
+  .container .four .download .imgD {
+    width: 3rem;
+    height: 3rem;
+  }
+  /* comportamento del banner */
+  @media only screen and (max-width: 960px){
+    .container .four .fourth .media4 .mask4 .download {
+      padding: 0.5rem 0.75rem;
+      height: fit-content;
+      top: 74%;
+      justify-content: space-between;
+    }
+    .container .four .fourth .media4 .mask4 .download .imgSt {
+      height: 4.5rem;
+    }
+  }
+  @media only screen and (min-width: 600px){
+    .container .four .download .text .h2St {
+      font-size: 1rem;
+    }
+    .container .four .download .text .pSt {
+      font-size: 0.875rem;
+    }
+    .download{
+      width: 0.35rem 0.75rem;
+    }
+  }
+  /* media-queries (960px) */
+  @media screen and (max-width: 960px){
+    .container .one, 
+    .container .two,
+    .container .three,
+    .container .four {
+      max-height: 100%;
+      padding: 4.5rem 0;
+    }
+    .container .two .second,
+    .container .four .fourth{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      max-width: calc(100% - 4rem);
+      flex-direction: column-reverse;
+    }
+    .container .one .first,
+    .container .three .third {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      max-width: calc(100% - 4rem);
+    }
+    
+    .container .one .first .text1,
+    .container .two .second .text2,
+    .container .three .third .text3,
+    .container .four .fourth .text4 {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .container .one .first .text1 .h2-text,
+    .container .two .second .text2 .h2-text,
+    .container .three .third .text3 .h2-text,
+    .container .four .fourth .text4 .h2-text{
+      font-size: 2rem;
+    }
+   
+    .container .one .first .text1 .p-text,
+    .container .two .second .text2 .p-text,
+    .container .three .third .text3 .p-text,
+    .container .four .fourth .text4 .p-text{
+      font-size: 1.1rem;
+    }
+  
+    .container .one .first .media1,
+     .container .two .second .media2,
+     .container .three .third .media3,
+     .container .four .fourth .media4 {
+      height: 100%;
+      width: 40rem;
+      max-width: fit-content;
+    }
+    .container .one .first .media1 .video1{
+      left: 9.5%;
+    }
+  }
+/*parte di lorenzo giu` */
 
 .mainscreen {
   width: 100%;
@@ -131,6 +496,7 @@ nav {
   margin-bottom: 0;
 }
 
+
 .sottotitolo {
   padding: 10px;
 }
@@ -175,3 +541,253 @@ nav {
     padding-right: 0px;
   }
 }
+
+/*parte gabry */
+.container-faq {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 72px 0px;
+    gap: 1rem ;
+    background-color: black;
+    
+    
+}
+.container-faq h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    font-family: sans-serif;
+}
+
+.button-faq {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem ;
+}
+.button-faq span{
+    display: flex;
+    width: 96%;
+    padding-left: 10px;
+    color: white;
+    padding: 12px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.button-faq  img {
+    display: flex;
+    width: 20px;
+    height: fit-content;
+    padding-top: 12px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(80deg) brightness(101%) contrast(104%);
+}
+.button-faq button {
+    width: 65vw;
+    height: 30%;
+    background-color: rgba(45, 45, 45, 1);
+    border: none;
+}
+.button-faq button:hover {
+    background-color: rgba(128, 128, 128,0.6);
+}
+.button-faq button {
+    display: flex;
+}
+.email-button {
+    display: flex;
+}
+.title-1 h3 {
+    color: white;
+    font-family: sans-serif;
+}
+.submit-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit-part #email1 {
+    width: 447px ;
+    height: 56px;
+    background-color:black ;
+    padding: 10px 16px 8px;
+    border-color: white;
+    color:white;
+   
+   
+}
+.submit-part #button1 {
+width: 25%;
+height: 100%;
+background: rgb(229, 9, 20);
+margin: 0px 0px 0px 8px;
+padding: 12px 24px;
+border: none;
+
+}
+.submit-part #span1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    
+}
+
+@media  screen and (max-width: 450px) {
+    .submit-part {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .submit-part #button1 {
+        width: 40vw;
+        
+    }
+    .button-faq span {
+        font-size: 13px;
+    }
+    .button-faq button {
+        width: 90vw;
+    }
+    .title-1 h3 {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+     .submit-part #email1 {
+        width: 80vw;
+        height: 50%;
+    }
+    .container-faq {
+        height: fit-content;
+    }
+  
+}
+
+@media  screen and (max-width:830px) {
+
+    .title-1 h3 {
+      padding-left: 50px;
+      font-size: 20px;
+      word-spacing: 5px;
+    }
+    
+}
+
+/* Parte di Stefano */
+
+.footer-container {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+}
+
+.links ul {
+  list-style: none;
+  font-size: 14px;
+}
+
+
+
+
+footer {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 5%;
+}
+
+.telephone {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .links>* {
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin-bottom: 2rem;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline white;
+  
+}
+
+
+.links a:active {
+  color: red;
+}
+
+footer .links ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.select-box {
+  position: relative;
+}
+
+.select-box svg {
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: white;
+}
+
+select {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  background: rgb(36, 36, 36);
+  border: 1px solid #989898;
+  padding: 6px 0px 6px 20px;
+  border-radius: 3px;
+  width: 126px;
+  height: 32px;
+  font-size: 15px;
+}
+
+
+
+@media (max-width: 950px) {
+
+
+
+  footer {
+      width: 90%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  footer .links ul {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  footer .links ul {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1rem;
+  }
+}
+
+
+@media (max-width: 320px) {
+  footer .links ul {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1rem;
+  }
+}
+
+
+
