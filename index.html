@@ -1,27 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix Italy - Watch TV Shows Online, Watch Movies Online</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="mainscreen">
-      <div class="backgroundgradient">
-        <nav>
-          <img src="logo.png" alt="logo" class="logo" />
-          <div class="select">
-            <div class="selectworld">
-              <select name="language-picker-select" id="language-picker-select">
-                <option lang="en" value="english" selected>English</option>
-                <option lang="it" value="italiano">Italiano</option>
-              </select>
-            </div>
-            <button class="signin">Accedi</button>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,32 +16,29 @@
       <nav>
         <img src="logo.png" alt="logo" class="logo" />
         <div>
+        <div class="select">
           <div class="selectworld">
             <select name="language-picker-select" id="language-picker-select">
               <option lang="en" value="english" selected>English</option>
               <option lang="it" value="italiano">Italiano</option>
             </select>
-
           </div>
-        </nav>
-        <div class="main">
-          <div class="titles">
-            <h1 class="unlimited">
-              Film, serie TV e tanto altro. Senza limiti.
-            </h1>
-            <h2 class="sottotitolo">
-              Guarda ciò che vuoi ovunque. Disdici quando vuoi.
-            </h2>
-            <h3 class="sottotitolo2">
-              Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o
-              riattivare il tuo abbonamento.
-            </h3>
-          </div>
-          <form class="email">
-            <input type="text" placeholder="Email" />
-            <button class="emailbutton">Inizia</button>
-          </form>
+          <button class="signin">Accedi</button>
         </div>
+      </nav>
+      <div class="main">
+        <div class="titles">
+          <h1 class="unlimited">Film, serie TV e tanto altro. Senza limiti.</h1>
+          <h2>Guarda ciò che vuoi ovunque. Disdici quando vuoi.</h2>
+          <h3>
+            Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o
+            riattivare il tuo abbonamento.
+          </h3>
+        </div>
+        <form class="email">
+          <input type="text" placeholder="Email" />
+          <button class="emailbutton">Inizia</button>
+        </form>
       </div>
     </div>
     <!-- parte matteo -->
@@ -206,7 +181,9 @@
           <input type="email" name="email" id="email1" placeholder="Indirizzo Email"/>
           <button type="submit" id="button1"><span id="span1">Inizia ></span></button>
         </form>
-        <div class="spazio"></div>
+
+        <!-- Parte di stefano -->
+    <div class="spazio"></div>
     <div class="footer-container">
     <footer>
         <p> Domande? Chiama <a href="#" class="telephone">800-130-364</a></p>
